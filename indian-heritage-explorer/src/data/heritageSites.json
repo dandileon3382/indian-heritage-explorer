@@ -1,0 +1,117 @@
+[
+  {
+    "id": "gateway-of-india",
+    "name": "Gateway of India",
+    "location": {
+      "state": "Maharashtra",
+      "coordinates": [18.9219, 72.8347]
+    },
+    "history": {
+      "en": "The Gateway of India is an arch-monument built during the 20th century in Mumbai, India. It was erected to commemorate the landing of King George V and Queen Mary at Apollo Bunder during their 1911 visit to India.",
+      "hi": "गेटवे ऑफ इंडिया मुंबई में 20वीं शताब्दी के दौरान निर्मित एक मेहराब-स्मारक है। इसे किंग जॉर्ज पंचम और क्वीन मेरी के 1911 में भारत दौरे के दौरान अपोलो बंडर पर उतरने की याद में बनाया गया था।",
+      "te": "గేట్‌వే ఆఫ్ ఇండియా ముంబైలో 20వ శతాబ్దంలో నిర్మించిన ఒక ప్రధాన కట్టడం. ఇది 1911లో కింగ్ జార్జ్ V మరియు క్వీన్ మేరీ భారతదేశ పర్యటన సందర్భంగా అపోలో బందర్ వద్ద దిగిన సందర్భాన్ని పురస్కరించుకుని నిర్మించబడింది.",
+      "mr": "गेटवे ऑफ इंडिया हे २० व्या शतकात मुंबईत बांधलेले एक प्रमुख स्मारक आहे। हे स्मारक १९११ साली किंग जॉर्ज पंचम आणि क्वीन मेरी यांच्या भारत भेटीच्या स्मरणार्थ उभारण्यात आले होते।"
+    },
+    "audio": {
+      "en": "/assets/audio/gateway-en.mp3",
+      "hi": "/assets/audio/gateway-hi.mp3",
+      "te": "/assets/audio/gateway-te.mp3",
+      "mr": "/assets/audio/gateway-mr.mp3"
+    },
+    "model": "/assets/3d-models/gateway-of-india.glb",
+    "images": ["/assets/images/gateway-1.jpg", "/assets/images/gateway-2.jpg"],
+    "streetViewUrl": "https://www.google.com/maps/embed?pb=!4v1758042662040!6m8!1m7!1s2cA2hHZOCndjkCTugAFG8w!2m2!1d18.92205951412891!2d72.83433490540155!3f118.18891729497894!4f13.80560873149173!5f0.4000000000000002"
+  },
+  {
+    "id": "the-great-sanchi-stupa",
+    "name": "The Great Sanchi Stupa",
+    "location": {
+      "state": "Madhya Pradesh",
+      "coordinates": [23.4801, 77.7397]
+    },
+    "history": {
+      "en": "The Great Stupa at Sanchi is one of the oldest stone structures in India and was originally commissioned by the Mauryan emperor Ashoka in the 3rd century BCE. It is a key monument of Indian architecture.",
+      "hi": "सांची का महान स्तूप भारत की सबसे पुरानी पत्थर की संरचनाओं में से एक है और इसे मूल रूप से तीसरी शताब्दी ईसा पूर्व में मौर्य सम्राट अशोक द्वारा बनवाया गया था। यह भारतीय वास्तुकला का एक प्रमुख स्मारक है।",
+      "te": "సాంచిలోని గొప్ప స్థూపం భారతదేశంలోని పురాతన రాతి నిర్మాణాలలో ఒకటి మరియు దీనిని మూడవ శతాబ్దం BCEలో మౌర్య చక్రవర్తి అశోకునిచే నిర్మించబడింది. ఇది భారతీయ వాస్తుశిల్పానికి ఒక ముఖ్యమైన స్మారక చిహ్నం.",
+      "pa": "ਸਾਂਚੀ ਦਾ ਮਹਾਨ ਸਤੂਪ ਭਾਰਤ ਦੀਆਂ ਸਭ ਤੋਂ ਪੁਰਾਣੀਆਂ ਪੱਥਰ ਦੀਆਂ ਬਣਤਰਾਂ ਵਿੱਚੋਂ ਇੱਕ ਹੈ ਅਤੇ ਇਸਨੂੰ ਮੌਰੀਆ ਸਮਰਾਟ ਅਸ਼ੋਕ ਦੁਆਰਾ ਤੀਜੀ ਸਦੀ ਬੀ.ਸੀ. ਵਿੱਚ ਬਣਵਾਇਆ ਗਿਆ ਸੀ। ਇਹ ਭਾਰਤੀ ਆਰਕੀਟੈਕਚਰ ਦਾ ਇੱਕ ਪ੍ਰਮੁੱਖ ਸਮਾਰਕ ਹੈ।"
+    },
+    "audio": {
+      "en": "/assets/audio/sanchi-en.mp3",
+      "hi": "/assets/audio/sanchi-hi.mp3",
+      "te": "/assets/audio/sanchi-te.mp3",
+      "pa": "/assets/audio/sanchi-pa.mp3"
+    },
+    "model": "/assets/3d-models/sanchi-stupa.glb",
+    "images": ["/assets/images/sanchi-1.jpg", "/assets/images/sanchi-2.jpg"],
+    "streetViewUrl": "https://www.google.com/maps/embed?pb=!4v1758042749210!6m8!1m7!1s9x4q1dyPbxC1oE3D7f4wBg!2m2!1d23.47922674133594!2d77.73982756780724!3f326.1231800107169!4f3.090852787316095!5f0.7820865974627469"
+  },
+  {
+    "id": "india-gate",
+    "name": "India Gate",
+    "location": {
+      "state": "Delhi",
+      "coordinates": [28.6129, 77.2295]
+    },
+    "history": {
+      "en": "The India Gate, a war memorial located in New Delhi, is a prominent landmark. It was built to commemorate the Indian soldiers who died in World War I and the Third Anglo-Afghan War.",
+      "hi": "इंडिया गेट, नई दिल्ली में स्थित एक युद्ध स्मारक है, जो एक प्रमुख ऐतिहासिक स्थल है। इसे प्रथम विश्व युद्ध और तीसरे एंग्लो-अफगान युद्ध में शहीद हुए भारतीय सैनिकों की याद में बनाया गया था।",
+      "te": "ఇండియా గేట్, న్యూఢిల్లీలో ఉన్న ఒక యుద్ధ స్మారకం, ఇది ఒక ప్రముఖ మైలురాయి. మొదటి ప్రపంచ యుద్ధం మరియు మూడవ ఆంగ్లో-ఆఫ్ఘన్ యుద్ధంలో మరణించిన భారతీయ సైనికుల జ్ఞాపకార్థం ఇది నిర్మించబడింది.",
+      "pa": "ਇੰਡੀਆ ਗੇਟ, ਨਵੀਂ ਦਿੱਲੀ ਵਿੱਚ ਸਥਿਤ ਇੱਕ ਜੰਗੀ ਸਮਾਰਕ, ਇੱਕ ਪ੍ਰਮੁੱਖ ਨਿਸ਼ਾਨ ਹੈ। ਇਹ ਪਹਿਲੇ ਵਿਸ਼ਵ ਯੁੱਧ ਅਤੇ ਤੀਜੇ ਐਂਗਲੋ-ਅਫਗਾਨ ਯੁੱਧ ਵਿੱਚ ਸ਼ਹੀਦ ਹੋਏ ਭਾਰਤੀ ਸਿਪਾਹੀਆਂ ਦੀ ਯਾਦ ਵਿੱਚ ਬਣਾਇਆ ਗਿਆ ਸੀ।"
+    },
+    "audio": {
+      "en": "/assets/audio/india-gate-en.mp3",
+      "hi": "/assets/audio/india-gate-hi.mp3",
+      "te": "/assets/audio/india-gate-te.mp3",
+      "pa": "/assets/audio/india-gate-pa.mp3"
+    },
+    "model": "/assets/3d-models/india-gate.glb",
+    "images": ["/assets/images/india-gate-1.jpg", "/assets/images/india-gate-2.jpg"],
+    "streetViewUrl": "https://www.google.com/maps/embed?pb=!4v1758042822434!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ0V4N3J4b3dF!2m2!1d28.6129628578028!2d77.22827048858181!3f99.79655686092502!4f3.1343258865168337!5f0.7820865974627469"
+  },
+  {
+    "id": "humayun-tomb",
+    "name": "Humayun's Tomb",
+    "location": {
+      "state": "Delhi",
+      "coordinates": [28.5932, 77.2589]
+    },
+    "history": {
+      "en": "Humayun's Tomb is the tomb of the Mughal Emperor Humayun in Delhi, India. The tomb was commissioned by his first wife Bega Begum and was the first garden-tomb on the Indian subcontinent.",
+      "hi": "हुमायूँ का मकबरा दिल्ली, भारत में मुगल सम्राट हुमायूँ का मकबरा है। मकबरे को उनकी पहली पत्नी बेगा बेगम ने बनवाया था और यह भारतीय उपमहाद्वीप पर पहला उद्यान-मकबरा था।",
+      "te": "హుమాయున్ సమాధి ఢిల్లీ, భారతదేశంలో ఉన్న మొఘల్ చక్రవర్తి హుమాయున్ సమాధి. ఈ సమాధిని అతని మొదటి భార్య బేగా బేగం నిర్మించారు మరియు ఇది భారత ఉపఖండంలో మొదటి తోట-సమాధి.",
+      "ur": "ہمایوں کا مقبرہ، دہلی، بھارت میں مغل بادشاہ ہمایوں کا مقبرہ ہے۔ یہ مقبرہ ان کی پہلی بیوی بیگا بیگم نے بنایا تھا اور یہ برصغیر پاک و ہند کا پہلا باغیچہ والا مقبرہ تھا۔"
+    },
+    "audio": {
+      "en": "/assets/audio/humayun-tomb-en.mp3",
+      "hi": "/assets/audio/humayun-tomb-hi.mp3",
+      "te": "/assets/audio/humayun-tomb-te.mp3",
+      "ur": "/assets/audio/humayun-tomb-ur.mp3"
+    },
+    "model": "/assets/3d-models/humayun-tomb.glb",
+    "images": ["/assets/images/humayun-tomb-1.jpg", "/assets/images/humayun-tomb-2.jpg"],
+    "streetViewUrl": "https://www.google.com/maps/embed?pb=!4v1758042876713!6m8!1m7!1s8QLJnu7cr7YCMf0PP5W9nw!2m2!1d28.59255324048652!2d77.25077928088044!3f7.773273779194568!4f7.912909814868769!5f0.4000000000000002"
+  },
+  {
+    "id": "charminar",
+    "name": "Charminar",
+    "location": {
+      "state": "Telangana",
+      "coordinates": [17.3616, 78.4747]
+    },
+    "history": {
+      "en": "The Charminar, a mosque and monument located in Hyderabad, Telangana, India, was constructed in 1591 by Qutb Shahi dynasty. It is a landmark and a global symbol of Hyderabad.",
+      "hi": "चारमीनार, हैदराबाद, तेलंगाना में स्थित एक मस्जिद और स्मारक, 1591 में कुतुब शाही राजवंश द्वारा बनाया गया था। यह हैदराबाद का एक महत्वपूर्ण स्थल और वैश्विक प्रतीक है।",
+      "te": "తెలంగాణలోని హైదరాబాద్‌లో ఉన్న మసీదు, స్మారక చిహ్నం అయిన చార్మినార్‌ను 1591లో కుతుబ్ షాహీ రాజవంశం నిర్మించింది. ఇది హైదరాబాద్‌ యొక్క ఒక మైలురాశి మరియు ప్రపంచ చిహ్నం.",
+      "ur": "چارمینار، ایک مسجد اور یادگار جو حیدرآباد، تلنگانہ، بھارت میں واقع ہے، 1591 میں قطب شاہی خاندان کے ذریعہ تعمیر کی گئی۔ یہ ایک اہم نشان اور حیدرآباد کی عالمی علامت ہے۔"
+    },
+    "audio": {
+      "en": "/assets/audio/charminar-en.mp3",
+      "hi": "/assets/audio/charminar-hi.mp3",
+      "te": "/assets/audio/charminar-te.mp3",
+      "ur": "/assets/audio/charminar-ur.mp3"
+    },
+    "model": "/assets/3d-models/charminar.glb",
+    "images": ["/assets/images/charminar-1.jpg", "/assets/images/charminar-2.jpg"],
+    "streetViewUrl": "https://www.google.com/maps/embed?pb=!4v1758042278987!6m8!1m7!1sDCN19mZLnmQAAAQIt6CiuA!2m2!1d17.36147593123398!2d78.474510625907!3f74.13106785098641!4f0!5f0.7820865974627469"
+  }
+]
