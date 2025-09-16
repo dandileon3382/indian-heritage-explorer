@@ -1,0 +1,38 @@
+{
+  "name": "indian-heritage-explorer",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://dandileon3382.github.io/indian-heritage-explorer",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@google/model-viewer": "^4.1.0",
+    "gh-pages": "^6.3.0",
+    "react": "^19.1.1",
+    "react-device-detect": "^2.2.3",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.1",
+    "three": "^0.172.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^5.0.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.33.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "vite": "^7.1.2"
+  }
+}
