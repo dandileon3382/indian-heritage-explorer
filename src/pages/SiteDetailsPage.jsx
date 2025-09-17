@@ -25,7 +25,7 @@ function SiteDetailsPage() {
   }
 
   const historyText = site.history[language] || site.history.en;
-  const audioSrc = site.audio[language] || site.audio.en;
+  const audioSrc = site.audio?.[language] || site.audio?.en || null;
   const regionalLanguageCode = Object.keys(site.history).find(lang => lang !== 'en' && lang !== 'hi' && lang !== 'te');
   const availableLanguages = ['en', 'hi', 'te', regionalLanguageCode].filter(Boolean);
 
@@ -72,8 +72,12 @@ function SiteDetailsPage() {
             <h2 className="text-2xl font-semibold mb-2">History</h2>
             <p className="text-gray-300">{historyText}</p>
             <div className="mt-4 flex items-center space-x-4">
-              <AudioPlayer audioSrc={audioSrc} />
-              {isMobile && <ARButton modelUrl={site.model} />}
+              {audioSrc ? (
+                <AudioPlayer audioSrc={audioSrc} />
+              ) : (
+                <p className="text-gray-400">No audio available.</p>
+              )}
+              {isMobile && site.model && <ARButton modelUrl={site.model} />}
             </div>
           </div>
           

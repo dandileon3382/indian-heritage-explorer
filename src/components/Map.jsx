@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import IndiaMapSvg from '../assets/images/india-map.svg';
+import IndiaMapSvg from '/assets/images/india-map.svg';
 
 function Map({ sites }) {
   const navigate = useNavigate();
