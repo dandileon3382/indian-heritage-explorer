@@ -6,6 +6,7 @@ import AudioPlayer from '../components/AudioPlayer';
 import LanguageSelector from '../components/LanguageSelector';
 import ARButton from '../components/ARButton';
 import { isMobile } from 'react-device-detect';
+import ThreeArViewer from '../components/ThreeArViewer';
 
 function SiteDetailsPage() {
   const { id } = useParams();
@@ -26,7 +27,9 @@ function SiteDetailsPage() {
 
   const historyText = site.history[language] || site.history.en;
   const audioSrc = site.audio?.[language] || site.audio?.en || null;
-  const regionalLanguageCode = Object.keys(site.history).find(lang => lang !== 'en' && lang !== 'hi' && lang !== 'te');
+  const regionalLanguageCode = Object.keys(site.history).find(
+    lang => lang !== 'en' && lang !== 'hi' && lang !== 'te'
+  );
   const availableLanguages = ['en', 'hi', 'te', regionalLanguageCode].filter(Boolean);
 
   return (
@@ -34,18 +37,28 @@ function SiteDetailsPage() {
       <div className="flex flex-col items-center">
         <Link to="/" className="self-start text-blue-500 hover:underline mb-4">← Back to Map</Link>
         <h1 className="text-4xl md:text-6xl font-bold mb-4">{site.name}</h1>
-        <LanguageSelector selected={language} onSelect={setLanguage} languages={availableLanguages} />
+        <LanguageSelector
+          selected={language}
+          onSelect={setLanguage}
+          languages={availableLanguages}
+        />
       </div>
       
       <div className="flex justify-center my-4 space-x-4">
         <button 
           onClick={() => setMode('3d')} 
-          className={`px-4 py-2 rounded-full font-semibold ${mode === '3d' ? 'bg-blue-600' : 'bg-gray-700 hover:bg-gray-600'}`}>
+          className={`px-4 py-2 rounded-full font-semibold ${
+            mode === '3d' ? 'bg-blue-600' : 'bg-gray-700 hover:bg-gray-600'
+          }`}
+        >
           3D Model
         </button>
         <button 
           onClick={() => setMode('street-view')} 
-          className={`px-4 py-2 rounded-full font-semibold ${mode === 'street-view' ? 'bg-blue-600' : 'bg-gray-700 hover:bg-gray-600'}`}>
+          className={`px-4 py-2 rounded-full font-semibold ${
+            mode === 'street-view' ? 'bg-blue-600' : 'bg-gray-700 hover:bg-gray-600'
+          }`}
+        >
           360° View
         </button>
       </div>
@@ -54,14 +67,19 @@ function SiteDetailsPage() {
         {/* Visualizer Section (3D Model or Street View) */}
         <div className="w-full h-80 md:h-96 bg-gray-800 rounded-lg shadow-lg overflow-hidden">
           {mode === '3d' ? (
-            <ModelViewer modelUrl={site.model} />
+            navigator.xr ? (
+              <ThreeArViewer modelUrl={site.model} />
+            ) : (
+              <ModelViewer modelUrl={site.model} />
+            )
           ) : (
             <iframe 
               src={site.streetViewUrl} 
-              allowFullScreen="" 
+              allowFullScreen
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade" 
               className="w-full h-full"
+              title="Street View"
             ></iframe>
           )}
         </div>
@@ -85,7 +103,12 @@ function SiteDetailsPage() {
             <h2 className="text-2xl font-semibold mb-2">Necessary Images</h2>
             <div className="flex flex-wrap gap-4 mt-4">
               {site.images.map((image, index) => (
-                <img key={index} src={image} alt={`${site.name} ${index + 1}`} className="w-24 h-24 object-cover rounded-lg shadow-md"/>
+                <img
+                  key={index}
+                  src={image}
+                  alt={`${site.name} ${index + 1}`}
+                  className="w-24 h-24 object-cover rounded-lg shadow-md"
+                />
               ))}
             </div>
           </div>

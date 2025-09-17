@@ -13,6 +13,7 @@ function AudioPlayer({ audioSrc }) {
         await audioRef.current.play();
       } catch (err) {
         console.error("Audio play failed:", err);
+        alert("Unable to play audio. Please check your internet connection or try again.");
       }
     }
   };
@@ -22,10 +23,15 @@ function AudioPlayer({ audioSrc }) {
       <audio
         ref={audioRef}
         src={audioSrc}
+        preload="auto"    // makes sure it's buffered early
+        crossOrigin="anonymous" // needed if audio is served from CDN or different domain
         onEnded={() => setIsPlaying(false)}
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
-      />
+      >
+        Your browser does not support the <code>audio</code> element.
+      </audio>
+      
       <button
         onClick={togglePlayPause}
         aria-label={isPlaying ? 'Pause audio' : 'Play audio'}
